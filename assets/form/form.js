@@ -37,7 +37,7 @@ $(function () {
         //show some response on the button
         $('button[type="submit"]', $form).each(function () {
             $btn = $(this);
-            $btn.prop('type', 'submit');
+            $btn.prop('type', 'button');
             $btn.prop('orig_label', $btn.text());
             $btn.text('Sending ...');
         });
