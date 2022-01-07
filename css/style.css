@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@100&family=Lobster&family=Rambla&display=swap');
+
+/* font-family: 'Audiowide', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Rambla', sans-serif; */
+
+
+body{
+    background: whitesmoke;    
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+/* ------------ ------ NavBar ------ ------------ */
+header{
+    top: -30px;
+    height: 120vh;
+    background: gainsboro;
+}
+/* -------  navBar  --------- */
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0 ;
+    background: #333;
+    height: 70px;
+    overflow: hidden;
+    z-index: 5;
+}
+.navBar{
+    padding: 20px 15px;    
+    color: wheat;
+    
+}
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+.navBar li>a{
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: wheat;
+}
+.navBar li:hover{
+    color: white;
+    font-size: 1.2em;
+    transition: 0.7s ease-in-out;
+}
+
+/* --------  Intro  ---------- */
+.intro-block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 100px;
+
+}
+.text-intro{
+    width: 65%;
+    height: 35vh;
+    margin: 10px;
+}
+.head-text-intro{
+    text-align: center;
+}
+.text-intro h1{
+    margin: 20px 30%;
+    width: 400px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+.line{
+    height: 1px;
+    width: 30%;
+    background: black;
+    margin: 0 auto;
+}
+.text-intro h2{
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: rgb(53, 53, 53);
+}
+.text-intro p{
+    margin: 20px 40px;
+    font-family: 'Rambla', sans-serif;
+}
+.photo-block{
+    margin: 10px;
+    height: 40vh;
+    width: 30%;
+    text-align: center;
+}
+.photo-intro img{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 8px 28px 8px rgba(0,0,0,0.25);;
+    margin: 10px;
+    width: auto;
+    height: 250px;
+    display: inline-block;
+    animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.photo-text{
+    margin: 10px;
+    width: 170px;
+    height: 50px;
+    display: inline-block;
+    
+}
+.photo-text li{
+    text-align: left;
+    padding: 5px 10px;
+}
+.photo-text a{
+    color: brown;
+    text-shadow: -1px 6px 8px rgba(0,0,0,0.46);
+}
+.photo-text a:hover{
+    font-size: 1.1em;
+}
+
+/* --------------- - Bandeau - ------------ */
+
+.bandeau-cv{
+    background: rgb(153,183,181);
+    height: 7vh;
+    text-align: center;
+    padding-top: 15px;
+}
+.bandeau-cv h1{
+    font-size: 1.6em;
+    color: rgb(255, 72, 72);
+}
+.bandeau-cv a{
+    cursor: pointer;
+}
+
+
+/* * ------------------------ Langages ---------------- */ 
+
+#langages{
+    padding: 40px
+    
+    30px 80px 50px;
+    margin: 0px 0 0 2%;
+
+
+}
+#langages .bar{
+    padding: 10px 0 4px 0;
+    letter-spacing: 0.1em;
+}
+#langages h3{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    padding-bottom: 15px;
+    color: rgb(53, 53, 53) ;
+}
+
+
+
+
+/* ------------------- --- Section 2 - Portfolio ---- ------------------ */
+
+section.projets{
+  background: rgb(51,51,51);
+  padding: 60px 0;
+} 
+div.bloc-projet{
+    margin: 0 3% 0 3%;
+    padding: 40px 10px 60px 40px;
+    background: linear-gradient(to bottom, #bdc3c7, #3c4e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0px 0px 1px rgb(255, 255, 133);
+}
+div.bloc-projet h3{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    padding-bottom: 15px;
+    color: rgb(53, 53, 53) ;
+}
+.projet{
+    display: flex;
+}
+.projet:nth-child(2){
+    margin-left: 3%;
+}
+.projet:nth-child(3){
+    margin-left: 6%;
+}
+.cadre{
+    position: relative;
+    padding: 40px 20px 25px 0;
+    width: 60%;
+    max-width: 600px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px 8px;
+    color: beige;
+    text-align: center;
+}
+.img-container{
+    height: 250px;
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px black;
+}
+/* Effet cadre qui bouge autour des images */
+.img-container img{
+    position: relative;
+    height: 100%;
+    margin: 0 auto; 
+    z-index: 1;
+}
+.img-container:hover img{
+    transform: scale(1.07);
+    transform-origin: 50% 50%;
+    filter: contrast(140%);
+    transition: 0.9s ease-in-out;
+}
+.cadre:before, .cadre:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 1px solid black;
+    transition: all 1.5s ease;
+    border-radius: 2px;
+    /* z-index: -1; */
+}
+.cadre::before{
+    top: 15px;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.cadre::after{
+    bottom: 0px;
+    right: 15px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.cadre:hover:before, .cadre:hover:after{
+    border-color: beige;
+    width: 100%;
+    height: 100%;
+}
+/* Faire apparaitre la legend en survolant le projet */
+.legend{
+    max-width: 350px;
+    padding: 50px 0 0 20px;
+    opacity: 0;
+    transition: 5s ease-in-out;
+}
+.projet:hover .legend{
+    opacity: 1;
+    transition: 2s ease;
+}
+.legend a {
+    padding: 16px 10px 10px 10px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    float: right;
+    border-radius: 3px;
+    background: seashell;
+    /* Appel de l'animation - shadow-pop */
+    animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+/* Effet bouton quand on appuie dessus */
+.legend a:active{
+    animation: shadow-push 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+}
+
+
+/* ---------------------- ----- Section 3 - Parcours ---- ----------- */
+/* ---------------------- Parcours ------------------ */
+#parcours{
+    max-width: 800px;
+    margin: 100px auto 80px auto;
+    padding: 30px;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 2px 3px 3px 2px rgba(0,0,0,0.42);
+}
+#parcours h3{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+#parcours h4{
+    font-size: 1.6em;
+    color: orange;
+    margin-left: 20px;
+}
+#parcours h6{
+    font-style: italic;
+    color:purple;
+    font-size: 0.9;
+    margin-left: 20px;
+}
+#parcours p{
+    line-height: 1.9em;
+}
+.timeline{
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #f9d423, #ff4e50);
+    border-image-slice: 1;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+}
+
+
+/* -------------------- ---- Section 5 - Others skills --- --------------- */
+/* ----------------- Other ------------------ */
+#other-skills{
+    margin-top: 80px;
+    padding: 50px 100px 100px 100px;
+    width: 100%;
+    background-color: rgb(118, 118, 255);
+    clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 84%);
+}
+#other-skills h3{
+    transform: rotate(-3.2deg);
+    font-size: 3em;
+    padding-top: 30px;
+    text-shadow: -1px 1px 0px maroon;
+    color: rgb(218, 250, 36);
+}
+.cloud{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* -------------------- ---- Section 6 - Hobbies --- ------------------- */
+/* -------------- hobbies ---------------- */
+#hobbies{
+    padding: 250px 50px 100px 50px;
+    margin: -300px 0 -90px 0;
+    clip-path: polygon(0 21%, 100% 31%, 100% 95%, 0% 100%);
+    background-color: orange;
+}
+#hobbies h3{
+    transform: rotate(4.2deg);
+    font-size: 3em;
+    text-shadow: -1px 1px 0px rgb(80, 80, 255);
+}
+#hobbies p{
+    text-shadow: 3px 4px 4px rgba(0,0,0,0.6);
+}
+.pictures{
+    display: flex;
+    justify-content: center;
+}
+/* Mettre le text en vertical et écrit de haut en bas */
+.flip-box-back div{
+    margin: 0 auto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.flip-box-back p {
+    text-transform: uppercase;
+    padding: 10px;
+    /* Ajuster les mots à la ligne */
+    font-size-adjust: auto;
+}
+.flip-box-back{
+    color: white;
+    /* Retourner les mots (comme dans un miroir) */
+    transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box{
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner{
+    transform: rotateY(180deg)
+}
+
+
+/* -------------------- ----- Footer - Formulaire ----- ------------- */
+/* -------- Icons ----- */
+footer{
+    background-size: cover;
+    text-align: center;
+    padding: 160px 50px 5px 50px;    
+}
+footer h3{
+    padding: 0 0 60px 0;
+    font-size: 2.5em;
+    font-family: 'Lobster', cursive;
+}
+.footer-icons{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 30%;
+}
+.network {
+    font-size: 4em;
+    border: 1px solid grey;
+    padding: 30px 45px;
+    color: brown;
+    z-index: -1 !important;
+    border-radius: 50%;
+}
+.network:hover, textarea:hover, input:hover, .form-button:hover{
+    background: rgba(99, 2, 2, 0.555);
+    color: honeydew;
+    transition: all 0.3s ease-in-out;
+}
+  
+
+/* Fleche permettant de revenir au debu du site */
+.arrow{
+    margin: -20 auto;
+    padding-top: 15px;
+    animation: arrow linear 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.arrow a{
+    font-size: 3em;
+    border: none;
+    color: slateblue;
+}
+.arrow:hover i{
+    transform: scale(1.6);
+    transition: 0.5s ease-in-out;
+    color: blue;
+}
+footer p{
+    font-size: 0.9em;
+    letter-spacing: 0.3em;
+}
