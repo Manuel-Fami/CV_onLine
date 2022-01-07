@@ -24,7 +24,7 @@ a:active{
 /* ------------ ------ NavBar ------ ------------ */
 header{
     top: -30px;
-    height: 120vh;
+    height: 150vh;
     background: gainsboro;
 }
 /* -------  navBar  --------- */
@@ -70,14 +70,14 @@ nav{
 }
 .text-intro{
     width: 65%;
-    height: 35vh;
+    height: 45vh;
     margin: 10px;
 }
 .head-text-intro{
     text-align: center;
 }
 .text-intro h1{
-    margin: 20px 30%;
+    margin: 60px 30%;
     width: 400px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
@@ -100,8 +100,8 @@ nav{
     font-family: 'Rambla', sans-serif;
 }
 .photo-block{
-    margin: 10px;
-    height: 40vh;
+    margin: 60px 10px;
+    height: 45vh;
     width: 30%;
     text-align: center;
 }
@@ -138,13 +138,13 @@ nav{
 
 .bandeau-cv{
     background: rgb(153,183,181);
-    height: 7vh;
+    height: 12vh;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 35px;
 }
 .bandeau-cv h1{
     font-size: 1.6em;
-    color: rgb(255, 72, 72);
+    color: rgba(146, 0, 0, 0.897);
 }
 .bandeau-cv a{
     cursor: pointer;
@@ -154,9 +154,7 @@ nav{
 /* * ------------------------ Langages ---------------- */ 
 
 #langages{
-    padding: 40px
-    
-    30px 80px 50px;
+    padding: 100px 30px 80px 50px;
     margin: 0px 0 0 2%;
 
 
@@ -337,15 +335,14 @@ div.bloc-projet h3{
     margin-top: 80px;
     padding: 50px 100px 100px 100px;
     width: 100%;
-    background-color: rgb(118, 118, 255);
+    background-color: rgb(133, 133, 133);
     clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 84%);
 }
 #other-skills h3{
     transform: rotate(-3.2deg);
     font-size: 3em;
     padding-top: 30px;
-    text-shadow: -1px 1px 0px maroon;
-    color: rgb(218, 250, 36);
+    text-shadow: -1px 1px 0px rgb(80,80,255);
 }
 .cloud{
     text-align: center;
@@ -360,7 +357,7 @@ div.bloc-projet h3{
     padding: 250px 50px 100px 50px;
     margin: -300px 0 -90px 0;
     clip-path: polygon(0 21%, 100% 31%, 100% 95%, 0% 100%);
-    background-color: orange;
+    background-color: rgb(220,220,220);
 }
 #hobbies h3{
     transform: rotate(4.2deg);
@@ -404,6 +401,7 @@ div.bloc-projet h3{
     max-width: 300px;
     height: 300px;
     perspective: 1000px;
+    margin: 5px;
 }
 .flip-box-inner{
     position: relative;
@@ -427,7 +425,7 @@ footer{
 }
 footer h3{
     padding: 0 0 60px 0;
-    font-size: 2.5em;
+    font-size: 3em;
     font-family: 'Lobster', cursive;
 }
 .footer-icons{
@@ -438,16 +436,81 @@ footer h3{
 }
 .network {
     font-size: 4em;
-    border: 1px solid grey;
+    border: 1px solid rgb(128, 128, 128);
     padding: 30px 45px;
     color: brown;
     z-index: -1 !important;
     border-radius: 50%;
+    margin: 5px;
 }
 .network:hover, textarea:hover, input:hover, .form-button:hover{
-    background: rgba(99, 2, 2, 0.555);
+    background: rgba(146, 0, 0, 0.897);
     color: honeydew;
     transition: all 0.3s ease-in-out;
+}
+
+/* --- Formulaire --  */
+
+.form-container{
+    padding-top: 20px;
+}
+#reused_form{
+    position: relative;
+    margin: 50px auto;
+}
+input{
+    font-size: 0.85em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px;
+    background: transparent;
+    outline: none;
+    color: rgb(5, 117, 2);
+    border: solid 1px grey;
+    border-bottom: none;
+}
+textarea{
+    width: 470px;
+    height: 110px;
+    padding: 0px 15px;
+    max-height: 110px;
+    background: transparent;
+    outline: none;
+    color: rgb(5, 117, 2);
+    border: solid 1px grey;
+    resize: none;
+}
+input::placeholder, textarea::placeholder, input:focus::placeholder, textarea:focus::placeholder{
+    color: rgb(22, 7, 7);
+}
+input:hover::placeholder, textarea:hover::placeholder, input:hover:focus::placeholder, textarea:hover:focus::placeholder{
+    color: rgb(238, 238, 238);
+}
+.form-button{
+    background: transparent;
+    border: solid 1px rgb(156, 156, 156);
+    padding: 20px 75px;
+    margin: 14px 0 -20px 0;
+}
+/* Message erreur de l'envoie */
+.form-container h4{
+    font-size: 2em;
+}
+#error_message{
+    color: red;
+    border: 1px solid red;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px 15px 8px 15px;
+    box-shadow:0 0 5px red;
+}
+#succes_message{
+    color: green;
+    border: 1px solid green;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 50px;
+    box-shadow: 0 0 5px green ;
 }
   
 
